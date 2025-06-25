@@ -13,7 +13,7 @@ export class CustomWorld extends World {
   async init() {
      // Launch the browser with `--start-maximized`
     this.browser = await chromium.launch({
-      headless: false, // must be false for maximize to work
+      headless: true, // must be false for maximize to work
       args: ['--start-maximized'], // this flag opens browser maximized
     });
 
