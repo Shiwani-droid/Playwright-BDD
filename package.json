@@ -1,0 +1,29 @@
+{
+  "name": "playwright-cucumber-bdd-exercise",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "cucumber-js",
+    "report": "ts-node report.ts",
+    "test:full": "npm run test && npm run report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@cucumber/cucumber": "^11.3.0",
+    "@playwright/test": "^1.52.0",
+    "@types/cucumber": "^7.0.3",
+    "@types/node": "^22.15.29",
+    "allure-commandline": "^2.34.1",
+    "allure-cucumberjs": "^3.3.0",
+    "playwright": "^1.52.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.830.0",
+    "@aws-sdk/lib-dynamodb": "^3.830.0"
+  }
+}

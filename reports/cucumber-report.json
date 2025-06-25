@@ -1,0 +1,71 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "login-functionality-on-the-website;validate-login-with-incorrect-credentials",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Validate login with incorrect credentials",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 367186699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 10,
+            "name": "I am on the login page",
+            "match": {
+              "location": "src\\step-definitions\\login.steps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1457723799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "I login with invalid username \"test!\" and password \"password@123\"",
+            "match": {
+              "location": "src\\step-definitions\\login.steps.ts:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 354271600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "I should not see the Logout button",
+            "match": {
+              "location": "src\\step-definitions\\login.steps.ts:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 33387899
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "login-functionality-on-the-website",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Login functionality on the website",
+    "tags": [],
+    "uri": "src\\features\\login.feature"
+  }
+]
