@@ -6,6 +6,6 @@ Before(async function (this: CustomWorld) {
   await this.init();
 });
 
-// After(async function (this: CustomWorld) {
-//   await this.close();
-// });
+After(async function (this: CustomWorld) {
+  await this.close();
+});
