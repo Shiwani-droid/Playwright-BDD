@@ -42,19 +42,19 @@ When('I click on AddRemove Elements {string}', async function(this: CustomWorld,
 })
 
 Then('I Should see Add Element {string}', async function(this: CustomWorld, addElement) {
-  await expect(this.page.locator(`//a[text()="${addElement}"]`)).toBeVisible();
+  await expect(this.page.locator(`//*[text()="${addElement}"]`)).toBeVisible();
 })
 
 When('I click on Add Element {string}', async function(this: CustomWorld, addElement) {
-  await this.page.locator(`//a[text()="${addElement}"]`).click();
+  await this.page.locator(`//*[text()="${addElement}"]`).click();
 })
 
 Then('I should see Delete button {string}', async function(this: CustomWorld, deleteButton) {
-  await expect(this.page.locator(`//a[text()="${deleteButton}"]`)).toBeVisible();
+  await expect(this.page.locator(`//*[text()="${deleteButton}"]`)).toBeVisible();
 })
 
 When('I click on Delete button {string}', async function(this: CustomWorld, deleteButton) {
-  await this.page.locator(`//a[text()="${deleteButton}"]`).click();
+  await this.page.locator(`//*[text()="${deleteButton}"]`).click();
 })
 
 
